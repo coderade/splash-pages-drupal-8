@@ -1,0 +1,12 @@
+name: "Splash pages WHUFC"
+description: "Popup message for users - Splash Pages"
+package: "User interface"
+type: module
+# core: 8.x
+configure: popup_message.settings
+
+# Information added by Drupal.org packaging script on 2016-09-16
+version: '8.x-1.0-alpha2'
+core: '8.x'
+project: 'popup_message'
+datestamp: 1474010978

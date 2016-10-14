@@ -1,0 +1,83 @@
+#popup-message-background {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  border: 1px solid #cecece;
+  z-index: 9998;
+}
+
+#popup-message-window {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  z-index: 9999;
+  max-width: 640px;
+  font-size: 13px;
+  left: 50%;
+  top: 50%;
+  margin-left: -320px;
+  margin-top: -320px;
+}
+@media (max-width: 640px){
+  #popup-message-window{
+    width: 92%!important;
+    max-height: initial;
+    left: 0;
+    top: 0;
+    margin-left: 4%;
+    margin-top: 25%;
+  }
+}
+#popup-message-content:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px #ccc solid;
+    opacity: 0.5;
+    content: '';
+}
+#popup-message-content p{
+  margin: 0;
+}
+#popup-message-content p img, #popup-message-content img {
+  max-width: 100%;
+}
+#popup-message-window h1.popup-message-title {
+  text-align: left;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+}
+.bottomRightButtonText {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    width: 207px;
+    height: 36px;
+    background: url(/themes/westham/img/btn_splash.png) no-repeat;
+    padding: 8px 0 8px 18px;
+    text-align: center;
+    font-size: 16px;
+}
+/*#popup-message-close {
+  background: transparent url(img/close.png) no-repeat top left;
+  text-indent: -1000px;
+  width: 16px;
+  height: 16px;
+  font-size: 0px;
+  right: 6px;
+  top: 4px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+}*/

@@ -1,0 +1,5 @@
+services:
+  popup_message_event_subscriber:
+    class: Drupal\popup_message\EventSubscriber\PopupMessageSubscriber
+    tags:
+      - {name: event_subscriber}
